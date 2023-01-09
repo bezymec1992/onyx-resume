@@ -317,6 +317,9 @@ body {
 .circle {
     background: #414141;
     padding-bottom: 120px;
+    @media screen and (max-width: 767px) {
+        padding-bottom: 80px;
+    }
     .circle__wrapper {
         padding-top: 50px;
         background: url("../img/Ellips.png");
@@ -380,7 +383,9 @@ body {
 .swip {
     padding-top: 100px;
     padding-bottom: 100px;
-    
+    @media screen and (max-width: 992px) {
+        padding-top: 80px;
+    }
 }
 
 .swiper {
