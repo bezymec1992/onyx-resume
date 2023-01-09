@@ -23,10 +23,18 @@
                     <img src="img/Logo.svg" alt="logo">
                 </div>
                 <ul class="items">
-                    <li class="item">Home</li>
-                    <li class="item">About me</li>
-                    <li class="item">Portfolio</li>
-                    <li class="item">Contact</li>
+                    <a href="" class="link">
+                        <li class="item">Home</li>
+                    </a>
+                    <a href="#about" class="link">
+                        <li class="item">About me</li>
+                    </a>
+                    <a href="#portfolio" class="link">
+                        <li class="item">Portfolio</li>
+                    </a>
+                    <a href="#footer" class="link">
+                        <li class="item">Contact</li>
+                    </a>
                 </ul>
                 <div class="overlay"></div>
                 <a class="open-menu" href="#">
@@ -115,17 +123,28 @@
         </div>
     </section>
 
-    <section class="circle">
+    <section class="circle" id="about">
         <div class="container">
             <div class="circle__wrapper">
                 <div class="img-wrap img-wrap1">
                     <img src="./img/jamaica1.jpg" alt="">
                 </div>
-                <p class="text">
-                    Hello again everyone! So, you already know that my name is Vasyl. A little about myself: 30 y.o., athlete-football player, I love creativity since childhood, I live in Doneck, Ukraine. Why programming? Everything is elementary - I like it, the profession of the future, thanks to which I can provide myself and fulfill my dream - travel, at the moment I specialize in web design, front-end and back-end development, turnkey websites. Why should you choose me? I approach each order with great responsibility and love, as I want to make a name for myself, exclude plagiarism and negligence, fully study the project, the client and its target audience, work for quality, trying to make an order as quickly and uniquely as possible, taking into account all the edits and wishes.
+                <p class="text text1">
+                    Hello again everyone! So, you already know that my name is Vasyl. A little about myself: 30 y.o., athlete-football player, I love creativity since childhood, I live in Doneck, Ukraine. Why programming? Everything is elementary - I like it, the profession of the future, thanks to which I can provide myself and fulfill my dream - travel, at the moment  I specialize in web design, front-end and back-end development, turnkey websites. Why should you choose me? I approach each order with great 
+                    responsibility and love, as I want to make a name for myself, exclude plagiarism and negligence, fully study the project, the client and its target audience, work for quality, trying to make an order as quickly and uniquely as possible, taking into account all the edits and wishes.
                     By trusting me, you will get the maximum return for your project, save your nerves and time.
                     If you are interested in me , you want to know something more or use my services, then I will provide all my contacts below.
                 </p>
+                <!-- <p class="text text2">
+                    2Hello again everyone! So, you already know that my name is Vasyl. A little about myself: 30 y.o., athlete-football player, I love creativity since childhood, I live in Doneck, Ukraine. Why programming? Everything is elementary - I like it, the profession of the future, thanks to which I can provide myself and fulfill my dream - travel, at the moment  I specialize in web design,
+                    
+                     front-end and back-end development, turnkey websites. Why should you choose me? I <span class="span2">approach each order with great 
+                    responsibility and love, as I want to make a name for myself, exclude plagiarism and negligence, fully study the project, the client and its target audience, work for quality, trying to make an order as quickly and uniquely as possible, taking into account all the edits and wishes.
+                    By trusting me, you will get the maximum return for your project, save your nerves and time.
+                    If you are interested in me , you want to know something more or use my services, then I will provide all my contacts below.
+                    </span>
+                    <span class="openText">...More info</span>
+                </p> -->
                 <div class="img-wrap img-wrap2">
                     <img src="./img/jamaica2.jpg" alt="">
                 </div>
@@ -134,7 +153,7 @@
 
     </section>
 
-    <section class="swip">
+    <section class="swip" id="portfolio">
         <!-- Slider main container -->
         <div class="swiper">
             <!-- Additional required wrapper -->

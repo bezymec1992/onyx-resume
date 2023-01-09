@@ -60,6 +60,7 @@ body {
             transform-origin: bottom left;
         }
     } 
+    
 }
 
     /****************/
@@ -86,6 +87,9 @@ body {
             color: #E4E4E4;
             font-size: 18px;
             font-weight: 300;
+            @media screen and (max-width: 767px) {
+                margin-bottom: 15px;
+            }
         }
     }
     .open-menu {
@@ -334,11 +338,11 @@ body {
         .text {
             max-width: 540px;
             padding: 60px;
-            display: block;
+
             margin: 0 auto 0;
             font-size: 20px;
             line-height: 24px;
-            display: flex;
+            display: block;
             align-items: center;
             letter-spacing: 0.01em;
             color: #FFFFFF;
@@ -348,6 +352,7 @@ body {
                 padding: 30px 20px;
                 font-size: 16px;
             }
+            
         }
         .img-wrap {
             max-width: 370px;
@@ -376,9 +381,34 @@ body {
             top: 150px;
             right: 0;
         }
+        
+        // .text2 {
+        //     position: relative;
+        //     display: inline-block;
+        //     @media screen and (min-width: 767px) {
+        //         display: none;
+        //     }
+        //     .span2 {
+        //         display: inline-block;
+        //         overflow: hidden;
+	    //         max-height: 0;
+	    //         transition: 0.5s;
+        //         letter-spacing: 0.01em;
+        //         font-size: 16px;
+        //         color: white;
+        //     }
+        //     .span0 {
+        //         display: inline;
+        //     }
+        // }
+        // .text1 {
+        //     @media screen and (max-width: 767px) {
+        //         display: none;
+        //     }
+            
+        // }
     }
 }
-
 /**slider**/
 .swip {
     padding-top: 100px;
@@ -466,7 +496,7 @@ body {
             left: 20%;
         }
     }
-  }
+}
 
 .footer {
     background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
