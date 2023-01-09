@@ -11,12 +11,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
     
-    <header class="header" id="header">
+    <header class="header" id="header" data-aos="fade-down">
         <div class="container">
             <div class="header__wrapper">
                 <div class="header__logo">
@@ -51,7 +52,7 @@
     <section class="main">
         <div class="container">
             <div class="main__wrapper">
-                <div class="main__info">
+                <div class="main__info" data-aos="fade-right" data-aos-delay="150">
                     <h2>Hello</h2>
                     <h1>I’m Vasyl
                         Lavrov
@@ -63,7 +64,7 @@
                         <a href="#footer"><button class="btn">CONTACT ME</button></a>
                         
                 </div> 
-                <div class="main__img">
+                <div class="main__img" data-aos="zoom-in" data-aos-delay="250">
                     <img class="me" src="img/me.png" alt="">
                 </div>
             </div>
@@ -122,14 +123,14 @@
             </div>
         </div>
     </section>
-
+    
     <section class="circle" id="about">
         <div class="container">
             <div class="circle__wrapper">
-                <div class="img-wrap img-wrap1">
+                <div class="img-wrap img-wrap1" data-aos="fade-up">
                     <img src="./img/jamaica1.jpg" alt="">
                 </div>
-                <p class="text text1">
+                <p class="text text1" data-aos="fade-up">
                     Hello again everyone! So, you already know that my name is Vasyl. A little about myself: 30 y.o., athlete-football player, I love creativity since childhood, I live in Doneck, Ukraine. Why programming? Everything is elementary - I like it, the profession of the future, thanks to which I can provide myself and fulfill my dream - travel, at the moment  I specialize in web design, front-end and back-end development, turnkey websites. Why should you choose me? I approach each order with great 
                     responsibility and love, as I want to make a name for myself, exclude plagiarism and negligence, fully study the project, the client and its target audience, work for quality, trying to make an order as quickly and uniquely as possible, taking into account all the edits and wishes.
                     By trusting me, you will get the maximum return for your project, save your nerves and time.
@@ -145,7 +146,7 @@
                     </span>
                     <span class="openText">...More info</span>
                 </p> -->
-                <div class="img-wrap img-wrap2">
+                <div class="img-wrap img-wrap2" data-aos="fade-up">
                     <img src="./img/jamaica2.jpg" alt="">
                 </div>
             </div>
@@ -153,7 +154,9 @@
 
     </section>
 
-    <section class="swip" id="portfolio">
+    <a href="#" class="arrow-up" >&#8593;</a>
+
+    <section class="swip" id="portfolio" data-aos="fade-up">
         <!-- Slider main container -->
         <div class="swiper">
             <!-- Additional required wrapper -->
@@ -195,7 +198,7 @@
         </div>
     </section>
 
-    <footer class="footer" id="footer">
+    <footer class="footer" id="footer" data-aos="fade-up">
         <div class="footer-container">
             <div class="footer__wrapper">
 
@@ -230,6 +233,7 @@
     
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
