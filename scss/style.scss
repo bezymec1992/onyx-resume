@@ -204,6 +204,8 @@ body {
             @media screen and (max-width: 992px) {
                 h1 {
                     font-size: 34px;
+                    max-width: 300px;
+                    margin: 0 auto;
                 }
                 h2 {
                     font-size: 28px;
@@ -219,7 +221,9 @@ body {
             line-height: 21px;
             margin-bottom: 27px;
             margin-top: 27px;
-            
+            @media screen and (max-width: 767px) {
+                text-align: center;
+            }
         }
         .main__img {
             margin-right: -170px;
