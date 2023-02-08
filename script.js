@@ -4,27 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
         body: document.querySelector("body"),
         overlay: document.querySelector(".overlay"),
         links: document.querySelectorAll(".link"),
-        // openText: document.querySelector(".openText"),
-        // span: document.querySelector(".span2")
     }
-    // DOMEls.openText.addEventListener("click", () => {
-    //     DOMEls.span.classList.toggle("span3");
-    // });
-
-    
-
-    // DOMEls.openText.addEventListener('click', function () {
-	// // this.classList.toggle('openTxt');
-    
-	//     if (DOMEls.span.style.maxHeight) {
-	// 	    DOMEls.span.style.maxHeight = null
-    //         this.innerHTML='More info'
-	//     } else {
-	// 	    DOMEls.span.style.maxHeight = DOMEls.span.scrollHeight + 'px';
-    //         this.innerHTML='Less info'
-	//     }
-    // });
-
 
     DOMEls.menuBtn.addEventListener("click", () => {
         DOMEls.menuBtn.classList.toggle("menu-opened");
@@ -47,6 +27,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 })
 
+function more () {
+    const dots = document.getElementById("dots"),
+    moreText = document.getElementById("more"),
+    btnText = document.getElementById("myBtn");
+    if(dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none"; 
+    } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline"; 
+    }
+}
 
 const swiper = new Swiper('.swiper', {
     speed: 500,
