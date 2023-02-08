@@ -9,7 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
     DOMEls.menuBtn.addEventListener("click", () => {
         DOMEls.menuBtn.classList.toggle("menu-opened");
         DOMEls.body.classList.toggle("open");
-        DOMEls.body.style = "overflow-y: hidden";
+        // DOMEls.body.style = "overflow-y: hidden";
+        if(DOMEls.body.style.overflowY === "visible") {
+            DOMEls.body.style = "overflow-y: hidden";
+        }
     });
 
     DOMEls.overlay.addEventListener("click", () => {
